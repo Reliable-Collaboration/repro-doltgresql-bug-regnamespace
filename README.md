@@ -10,6 +10,8 @@ psql:/tmp/repro.sql:6: ERROR:  unable to resolve type `regnamespace`
 Casts to `regclass` and `regtype` in the same test work. PostgreSQL 18.6 answers `public` for both casts
 to `regnamespace`.
 
+Reported upstream: https://github.com/dolthub/doltgresql/issues/3334
+
 ## Reproduce it
 
 You need Docker and a POSIX shell: Linux, macOS, or Windows with WSL. The first run downloads the images.
